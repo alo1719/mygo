@@ -1,3 +1,4 @@
+// Package mygo v0.10.0
 package mygo
 
 // P is alias for Ptr
