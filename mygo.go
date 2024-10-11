@@ -127,3 +127,10 @@ func (s *Set[T]) Len() int {
 func (s *Set[T]) Elements() []T {
 	return s.l
 }
+
+func ChanOn[T any](ch chan T) bool {
+	if _, ok := <-ch; ok {
+		return true
+	}
+	return false
+}
