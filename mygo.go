@@ -72,6 +72,10 @@ func (m *Map[K, V]) Get(k K) (V, bool) {
 	return v, ok
 }
 
+func (m *Map[K, V]) GetOrZero(k K) V {
+	return m.m[k]
+}
+
 func (m *Map[K, V]) Keys() []K {
 	return m.l
 }
