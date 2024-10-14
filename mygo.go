@@ -132,9 +132,6 @@ func (s *Set[T]) Elements() []T {
 	return s.l
 }
 
-func ChanOn[T any](ch chan T) bool {
-	if _, ok := <-ch; ok {
-		return true
-	}
-	return false
+func Fst[T1 any, T2 any](fst T1, sec T2) T1 {
+	return fst
 }
